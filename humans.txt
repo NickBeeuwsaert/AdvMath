@@ -1,0 +1,26 @@
+# TEAM
+
+	Luiz Berti
+	Designer
+	Brazil
+	@luizfelberti -- http://www.luizberti.net/
+
+    Nick Beeuwsaert
+    Developer
+    United States
+    @NickBeeuwsaert -- http://www.razerwolf.com/
+
+# THANKS
+
+	James Trotter
+	<twitter> -- <url>
+
+	Whoever made the icon we're using for it.
+	We don't know who you are but please let us
+	keep using it if you find it, contact me for
+	credits.
+
+# POWERED BY
+
+    Math.js
+    Normalize.css
