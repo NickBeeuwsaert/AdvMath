@@ -32,7 +32,7 @@
 
 
 	<!-- Scripts -->
-	<script src="https://raw.github.com/josdejong/mathjs/master/math.min.js"></script>
+	<script src="mathjs/math.min.js"></script>
 
 	<!-- Google Analytics -->
 	<script>
@@ -49,15 +49,16 @@
 		<h1 class="header">AdvMath BETA</h1>
 		<h4 class="subtitle">by <a href="http://luizberti.net/"><b>luiz berti</b></a> and <a href="http://razerwolf.com/"><b>nick beeuwsaert</b></a><br>source on <a href="https://github.com/luizfb/AdvMath/"><b>github</b></a></h4>
 
-		<input type="text" class="expression" id="exp" autosuggest="off" autocorrect="off" spellcheck="false" autocomplete="off" autocapitalize="off" autofocus>
+		<input type="text" class="expression" id="exp" autosuggest="off" autocorrect="off" spellcheck="false" autocomplete="off" autocapitalize="off" autofocus placeholder="Expression...">
 
 		<!-- <textarea class="textarea" id="in"  placeholder="Additional Input..." wrap="hard"></textarea> -->
 
 		<div class="log" id="out">
-			<p>pow(4, 5)<span>1024</span></p>
+			<!--<p>pow(4, 5)<span>1024</span></p>
 			<p class="i">pow(89, 54879465)<span>Error</span></p>
-			<p class="i">Invalid Expression:<span>TITS!</span></p>
+			<p class="i">Invalid Expression:<span>TITS!</span></p> -->
 		</div>
 	</div>
+	<script src="scripts/advmath.js"></script>
 </body>
 </html>
