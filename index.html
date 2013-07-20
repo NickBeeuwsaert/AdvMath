@@ -1,41 +1,38 @@
 <!doctype html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
 
-	<title>AdvMath</title>
+    <title>AdvMath</title>
 
-	<meta name="author"      content="humans.txt">
-	<meta name="description" content="A online, JavaScript powered advanced mathematical processor based on Math.js">
+    <meta name="author"      content="humans.txt">
+    <meta name="description" content="A online, JavaScript powered advanced mathematical processor based on Math.js">
 
 
-	<!-- Style -->
-	<link rel="stylesheet"    href="style/normalize.css"   type="text/css">
-	<link rel="stylesheet"    href="style/layout.css"      type="text/css">
-	<link rel="shortcut icon" href="favicon.ico">
-
+    <!-- Style -->
+    <link rel="stylesheet"    href="style/normalize.css"   type="text/css">
+    <link rel="stylesheet"    href="style/layout.css"      type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- iOS -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ios/apple-touch-icon-144x144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ios/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="images/ios/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="images/ios/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ios/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ios/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="images/ios/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"   href="images/ios/apple-touch-icon-57x57-precomposed.png">
 
+    <!-- Scripts -->
+    <script src="mathjs/math.min.js"></script>
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-
-	<!-- Scripts -->
-	<script src="mathjs/math.min.js"></script>
-
-	<!-- Google Analytics -->
-	<script>
+    <!-- Google Analytics -->
+    <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
@@ -43,22 +40,21 @@
     </script>
 </head>
 <body>
-	<div class="container">
+    <div class="container">
+        <div class="icon"></div>
+        <h1 class="header">AdvMath BETA</h1>
+        <h4 class="subtitle">by <a href="http://luizberti.net/"><b>luiz berti</b></a> and <a href="http://razerwolf.com/"><b>nick beeuwsaert</b></a><br>source on <a href="https://github.com/luizfb/AdvMath/"><b>github</b></a></h4>
 
-		<div class="icon"></div>
-		<h1 class="header">AdvMath BETA</h1>
-		<h4 class="subtitle">by <a href="http://luizberti.net/"><b>luiz berti</b></a> and <a href="http://razerwolf.com/"><b>nick beeuwsaert</b></a><br>source on <a href="https://github.com/luizfb/AdvMath/"><b>github</b></a></h4>
+        <input type="text" class="expression" id="exp" autosuggest="off" autocorrect="off" spellcheck="false" autocomplete="off" autocapitalize="off" autofocus>
 
-		<input type="text" class="expression" id="exp" autosuggest="off" autocorrect="off" spellcheck="false" autocomplete="off" autocapitalize="off" autofocus placeholder="Expression...">
+        <!-- <textarea class="textarea" id="in"  placeholder="Additional Input..." wrap="hard"></textarea> -->
 
-		<!-- <textarea class="textarea" id="in"  placeholder="Additional Input..." wrap="hard"></textarea> -->
-
-		<div class="log" id="out">
-			<!--<p>pow(4, 5)<span>1024</span></p>
-			<p class="i">pow(89, 54879465)<span>Error</span></p>
-			<p class="i">Invalid Expression:<span>TITS!</span></p> -->
-		</div>
-	</div>
-	<script src="scripts/advmath.js"></script>
+        <div class="log" id="out">
+            <!--<p>pow(4, 5)<span>1024</span></p>
+            <p class="i">pow(89, 54879465)<span>Error</span></p>
+            <p class="i">Invalid Expression:<span>boogers!</span></p>-->
+        </div>
+    </div>
+    <script src="scripts/advmath.js"></script>
 </body>
 </html>
