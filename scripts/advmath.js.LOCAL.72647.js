@@ -41,8 +41,8 @@
 				message.appendChild(document.createTextNode(this.value));
 				result.appendChild(document.createTextNode(e.message+":"));
 				result.appendChild(message);
-			    this.value = "";
-            }
+				console.dir(e);
+			}
 			log.insertBefore(result, log.firstChild);
 
 		}

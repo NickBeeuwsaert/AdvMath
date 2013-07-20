@@ -41,8 +41,12 @@
 				message.appendChild(document.createTextNode(this.value));
 				result.appendChild(document.createTextNode(e.message+":"));
 				result.appendChild(message);
-			    this.value = "";
-            }
+<<<<<<< HEAD
+				console.dir(e);
+=======
+				this.value = "";
+>>>>>>> upstream/gh-pages
+			}
 			log.insertBefore(result, log.firstChild);
 
 		}
