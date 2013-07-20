@@ -19,6 +19,7 @@
 				message.appendChild(document.createTextNode(this.value));
 				result.appendChild(document.createTextNode(e.message+":"));
 				result.appendChild(message);
+				this.value = "";
 			}
 			log.insertBefore(result, log.firstChild);
 
